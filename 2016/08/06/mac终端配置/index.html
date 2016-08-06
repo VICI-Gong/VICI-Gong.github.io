@@ -1,0 +1,94 @@
+<!DOCTYPE html><html><head><title>mac 终端配置</title><meta charset='utf-8'><link href='https://dn-maxiang.qbox.me/res-min/themes/marxico.css' rel='stylesheet'><style>
+.note-content  {font-family: 'Helvetica Neue', Arial, 'Hiragino Sans GB', STHeiti, 'Microsoft YaHei', 'WenQuanYi Micro Hei', SimSun, Song, sans-serif;}
+
+.note-content .hljs {display: block; padding: 0.5em; overflow-x: auto; background-color: rgb(242,243,240);}
+.note-content .hljs-comment, .note-content 
+.hljs-meta {color: #969896;}
+.note-content .hljs-string, .note-content 
+.hljs-variable, .note-content 
+.hljs-template-variable, .note-content 
+.hljs-strong, .note-content 
+.hljs-emphasis, .note-content 
+.hljs-quote {color: #df5000;}
+.note-content .hljs-keyword, .note-content 
+.hljs-selector-tag, .note-content 
+.hljs-type {color: #a71d5d;}
+.note-content .hljs-literal, .note-content 
+.hljs-symbol, .note-content 
+.hljs-bullet, .note-content 
+.hljs-attribute {color: #0086b3;}
+.note-content .hljs-section, .note-content 
+.hljs-name {color: #63a35c;}
+.note-content .hljs-tag {color: #333333;}
+.note-content .hljs-title, .note-content 
+.hljs-attr, .note-content 
+.hljs-selector-id, .note-content 
+.hljs-selector-class, .note-content 
+.hljs-selector-attr, .note-content 
+.hljs-selector-pseudo {color: #795da3;}
+.note-content .hljs-addition {color: #55a532; background-color: #eaffea;}
+.note-content .hljs-deletion {color: #bd2c00; background-color: #ffecec;}
+.note-content .hljs-link {text-decoration: underline;}
+.note-content  {background-color: rgb(249,249,245); color: #2C3E50;}
+.note-content h1 {color: #0077bb; font-size: 30px;}
+.note-content h2 {font-size: 26px;}
+.note-content h3 {font-size: 21px;}
+.note-content h4 {font-size: 18px;}
+.note-content h5 {font-size: 16px;}
+.note-content h1, .note-content  h2, .note-content  h3, .note-content  h4, .note-content  h5, .note-content  h6 {text-rendering: optimizelegibility; font-weight: 510;}
+.note-content h1, .note-content  h2, .note-content  h3, .note-content  h4, .note-content  h5, .note-content  h6, .note-content   .checklist-item {padding: 0 0.5em 0 0.5em;}
+.note-content p {margin: 2px 0 2px 15px;}
+.note-content table {margin-left: 12px;}
+</style></head><body><div id='preview-contents' class='note-content'>
+                        <div id="wmd-preview" class="preview-content"></div>
+                    <div id="wmd-preview-section-2023" class="wmd-preview-section preview-content">
+
+</div><div id="wmd-preview-section-2070" class="wmd-preview-section preview-content">
+
+<h1 id="mac-终端配置">mac 终端配置</h1>
+
+<p></p>
+
+<hr>
+
+<blockquote>
+  <p>程序员需要经常与终端打交道，好的配置及视觉效果能提升工作效率，现将工作中用的终端配置总结如下。</p>
+</blockquote></div><div id="wmd-preview-section-2025" class="wmd-preview-section preview-content">
+
+<h2 id="iterm2">iTerm2</h2>
+
+<p>去<a href="https://www.iterm2.com/" target="_blank">https://www.iterm2.com/</a>下载dmg安装包安装即可。</p>
+
+</div><div id="wmd-preview-section-2026" class="wmd-preview-section preview-content">
+
+<h2 id="homebrew">Homebrew</h2>
+
+<p>官网在<a href="http://brew.sh/" target="_blank">这里</a>，安装命令如下：</p>
+
+</div><div id="wmd-preview-section-2027" class="wmd-preview-section preview-content">
+
+<pre class="prettyprint"><code class="language-bash hljs">/usr/bin/ruby <span class="hljs-operator">-e</span> <span class="hljs-string">"<span class="hljs-variable">$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)</span>"</span><br></code></pre>
+
+</div><div id="wmd-preview-section-2028" class="wmd-preview-section preview-content">
+
+<h2 id="sublime-text-2">Sublime Text 2</h2>
+
+<p>官网在<a href="http://www.sublimetext.com/2" target="_blank">这里</a>，下载安装即可。</p>
+
+</div><div id="wmd-preview-section-2029" class="wmd-preview-section preview-content">
+
+<h2 id="终端配置">终端配置</h2>
+
+<p>终端配置主要是包括bash配置，视觉配色，vim配置等等，之前都是手动一项项去配。偶然之间发现有大神已经写好自动化脚本了。git地址：</p>
+
+</div><div id="wmd-preview-section-2030" class="wmd-preview-section preview-content">
+
+<pre class="prettyprint"><code class="hljs groovy"><span class="hljs-string">https:</span><span class="hljs-comment">//github.com/mathiasbynens/dotfiles</span><br></code></pre>
+
+<p>配置命令：</p>
+
+</div><div id="wmd-preview-section-2031" class="wmd-preview-section preview-content">
+
+<pre class="prettyprint"><code class="hljs vim">git clone http<span class="hljs-variable">s:</span>//github.<span class="hljs-keyword">com</span>/mathiasbynens/dotfiles.git &amp;&amp; <span class="hljs-keyword">cd</span> dotfiles &amp;&amp; <span class="hljs-keyword">source</span> bootstrap.<span class="hljs-keyword">sh</span><br></code></pre>
+
+<p>虽然说能够达到自动化配置了，但还是建议看看bash脚本，了解配置过程中涉及到的点，方便自己添加一些定制化的功能。</p></div><div id="wmd-preview-section-footnotes" class="preview-content"></div></div></body></html>
